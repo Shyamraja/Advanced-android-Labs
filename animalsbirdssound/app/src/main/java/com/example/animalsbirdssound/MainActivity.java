@@ -78,6 +78,30 @@ public class MainActivity extends AppCompatActivity {
              mediaPlayer = MediaPlayer.create(this, R.raw.wolf);
               mediaPlayer.start();
                  }
+                  @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_sounds, menu);
+        return true;
+                  }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.animal:
+                Intent screen1 = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(screen1);
+                return false;
+            case R.id.bird:
+                Intent screen2 = new Intent(MainActivity.this, birdssoundActivity.class);
+                startActivity(screen2);
+                return false;
+                      }
+        return super.onOptionsItemSelected(item);
+                  }
+            }
+
+
               
-               }
+            
 
