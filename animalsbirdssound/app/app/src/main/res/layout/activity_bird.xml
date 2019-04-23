@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Press a bird for sound"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginBottom="429dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bird"
+        app:srcCompat="@drawable/huuhkaja" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="191dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/bird"
+        app:srcCompat="@drawable/peippo" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="199dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="215dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/peukaloinen" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="166dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="222dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/punatulkku" />
+
+</android.support.constraint.ConstraintLayout>
